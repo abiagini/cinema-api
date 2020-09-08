@@ -10,6 +10,6 @@ $factory->define(Movie::class, function (Faker $faker) {
         'title'       => $faker->sentence,
         'description' => $faker->paragraph,
         'rating'      => $faker->numberBetween(0, 5),
-        'image'       => $faker->imageUrl(),
+        'image_url'   => $faker->imageUrl(),
     ];
 });
