@@ -6,7 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 final class Movie extends Model
 {
-    public const TABLE = 'movies';
+    public const TABLE      = 'movies';
+    public const MIN_RATING = 0;
+    public const MAX_RATING = 5;
 
     protected $table = self::TABLE;
 
