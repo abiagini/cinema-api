@@ -14,6 +14,7 @@ Route::middleware('auth:api')->group(function () {
     Route::group(['prefix' => 'movies'], function () {
         Route::get('', 'MovieController@index');
         Route::post('', 'MovieController@store');
+        Route::put('{movie}', 'MovieController@update');
     });
 });
 

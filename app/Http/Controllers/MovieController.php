@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\Movies\StoreRequest;
+use App\Http\Requests\Movies\UpdateRequest;
 use App\Models\Movie;
 use App\Repositories\Movies\MovieRepository;
 use Illuminate\Http\Request;
@@ -28,5 +29,14 @@ final class MovieController extends Controller
         $this->repository->save($movie);
 
         return response()->json($movie, 201);
+    }
+
+    public function update(Movie $movie, UpdateRequest $request)
+    {
+        $movie->fill($request->validated());
+
+        $this->repository->save($movie);
+
+        return response()->json(null, 204);
     }
 }
