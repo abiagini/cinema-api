@@ -13,8 +13,8 @@ Route::group(['prefix' => 'auth'], function () {
 Route::middleware('auth:api')->group(function () {
     Route::group(['prefix' => 'movies'], function () {
         Route::get('', 'MovieController@index');
+        Route::get('{movie}', 'MovieController@show');
         Route::post('', 'MovieController@store');
         Route::put('{movie}', 'MovieController@update');
     });
 });
-

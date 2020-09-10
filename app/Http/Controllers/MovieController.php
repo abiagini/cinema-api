@@ -22,6 +22,11 @@ final class MovieController extends Controller
         return response()->json($this->repository->all(), 200);
     }
 
+    public function show(Movie $movie)
+    {
+        return response()->json($movie, 200);
+    }
+
     public function store(StoreRequest $request)
     {
         $movie = new Movie($request->validated());
