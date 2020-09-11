@@ -11,9 +11,10 @@ Example API REST for cinema, developed in Laravel
  4. Create local environment file `cp .env .env.example`
  5.  Generate application key `php artisan key:generate`
  6. Fill `DB_HOST DB_PORT DB_DATABASE DB_USERNAME DB_PASSWORD` 
- 7. Create `cinema and cinema_api` databases
+ 7. Create `cinema and cinema_testing` databases
  8. Create tables `php artisan migrate`
  9. Seed with random data `php artisan db:seed --class=MovieSeeder`
+ 10. Run tests `php artisan test`
 
 ### Let's get started
 We have all done, now it's time to serve the application, run the following command to do it on local environment 
