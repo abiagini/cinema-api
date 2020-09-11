@@ -14,7 +14,8 @@ Example API REST for cinema, developed in Laravel
  7. Create `cinema and cinema_testing` databases
  8. Create tables `php artisan migrate`
  9. Seed with random data `php artisan db:seed --class=MoviesSeeder`
- 10. Run tests `php artisan test`
+ 10. Configure Laravel Passport for OAUTH Authentication `php artisan passport:install`
+ 11. Run tests `php artisan test`
 
 ### Let's get started
 We have all done, now it's time to serve the application, run the following command to do it on local environment 
