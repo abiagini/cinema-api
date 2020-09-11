@@ -13,7 +13,7 @@ Example API REST for cinema, developed in Laravel
  6. Fill `DB_HOST DB_PORT DB_DATABASE DB_USERNAME DB_PASSWORD` 
  7. Create `cinema and cinema_testing` databases
  8. Create tables `php artisan migrate`
- 9. Seed with random data `php artisan db:seed --class=MovieSeeder`
+ 9. Seed with random data `php artisan db:seed --class=MoviesSeeder`
  10. Run tests `php artisan test`
 
 ### Let's get started
